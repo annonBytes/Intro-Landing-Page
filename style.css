@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url("./images/bg-desktop.svg");
+  background-color: hsl(257, 40%, 49%);
+  background-size: cover;
+  padding: 50px;
+  color: #ffffff;
+  width: 1400px;
+  max-width: 100%;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.8;
+  line-height: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+}
+
+.hero-bg {
+  width: 700px;
+  max-width: 100%;
+}
+
+.left {
+  flex: 0.6;
+  margin-right: 40px;
+}
+
+.right {
+  flex: 0.4;
+}
+
+.btn {
+  background-color: #ffffff;
+  width: 200px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 100px;
+  margin-top: 20px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+  color: hsl(257, 40%, 49%);
+  font-size: 16px;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn:hover {
+  background-color: black;
+  color: #ffffff;
+  transition: 0.2s ease cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-bg {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .social {
+    margin-top: 80px;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 2em;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  p {
+    font-size: 16px;
+    line-height: 2em;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
